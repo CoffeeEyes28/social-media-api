@@ -1,1 +1,59 @@
-# social-media-api
+# Social-Media-API
+
+# MIT
+
+## MIT License
+<br>
+
+
+ [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+
+# User Story 
+```md
+AS A social media startup
+I WANT an API for my social network that uses a NoSQL database
+SO THAT my website can handle large amounts of unstructured data
+```
+
+# Description 
+Social Media API built with a NoSQL backend 
+
+
+# Technologies Used
+- JavaScript
+- Node.js
+- Express.js
+- NoSQL
+- Mongoose
+- Insomnia 
+
+# Table of Contents 
+- [Social-Media-API](#social-media-api)
+- [MIT](#mit)
+  - [MIT License](#mit-license)
+- [User Story](#user-story)
+- [Description](#description)
+- [Technologies Used](#technologies-used)
+- [Table of Contents](#table-of-contents)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Questions](#questions)
+
+
+# Installation 
+This API requires Node.js, Express, and Mongoose
+<br>
+Please run the following command to install the required dependencies
+<pre><code>npm install </code></pre>
+
+
+
+# Usage 
+The following video will demonstrate the API functionality 
+<br>
+
+
+
+# Questions 
+Any questions regarding this repository please open an issue, or reach out to me directly via <a href="https://github.com/CoffeeEyes28">GitHub</a> or by email @ <a href="mailto:litm47@gmail.com">litm47@gmail.com</a>
