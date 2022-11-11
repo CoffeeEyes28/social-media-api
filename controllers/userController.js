@@ -1,13 +1,14 @@
 const { User, Thought } = require('../models');
 
 module.exports = {
-
+    // GET all Users
     getAllUsers(req, res){
         User.find()
         .then((users) => res.status(200).json(users))
         .catch((err) => res.status(500).json(err));
     },
 
+    // GET a single User by Id
     getUser(req, res){
         User.findOne({ _id: req.params.userId })
         .populate('friends')
@@ -23,13 +24,14 @@ module.exports = {
             res.status(500).json(err)
         });
     },
-
+    // Create a new User
     newUser(req, res){
         User.create(req.body)
         .then((user) => res.status(200).json(user))
         .catch((err) => res.status(500).json(err));
     },
 
+    // Update an exisiting User by Id
     updateUser(req, res){
         User.findOneAndUpdate(
             { _id: req.params.userId},
@@ -43,7 +45,7 @@ module.exports = {
         )
         .catch((err) => res.status(500).json(err));
     },
-
+    // Delete an exisiting User by Id
     deleteUser(req, res){
         User.findOneAndDelete({ _id: req.params.userId })
         .then((user) => 
@@ -54,7 +56,7 @@ module.exports = {
         .then(() => res.status(200).json({ message: 'User and their respective thoughts have been deleted'}))
         .catch((err) => res.status(500).json(err));
     },
-
+    // Adds User to friends array by their respective Ids
     addFriend(req, res){
         User.findOneAndUpdate(
             { _id: req.params.userId },
@@ -68,7 +70,7 @@ module.exports = {
         )
         .catch((err) => res.status(500).json(err))
     },
-
+    // Removes User from friends array by their respective Ids
     removeFriend(req, res){
         User.findOneAndUpdate(
             { _id: req.params.userId },
