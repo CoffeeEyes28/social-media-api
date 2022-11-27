@@ -17,7 +17,9 @@ SO THAT my website can handle large amounts of unstructured data
 ```
 
 # Description 
-Social Media API built with a NoSQL backend 
+Social Media API built with a NoSQL backend. 
+<br>
+The Social Media API allows for users to create and share their thoughts, add friends and react to other users thoughts. 
 
 
 # Technologies Used
